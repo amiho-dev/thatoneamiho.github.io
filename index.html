@@ -18,6 +18,7 @@
             height: 100vh;
             text-align: center;
             overflow: hidden;
+            flex-direction: column;
         }
 
         .container {
@@ -25,6 +26,7 @@
             justify-content: space-between;
             width: 90%;
             max-width: 1200px;
+            margin-bottom: 40px;
         }
 
         .left, .right {
@@ -47,69 +49,52 @@
         }
 
         .left {
-            font-family: 'Montserrat', sans-serif; /* More modern font for emphasis */
-            font-size: 72px;
-            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: normal;
             color: #333;
             text-align: left;
-            padding-left: 20px;
-            padding-top: 40px;
-        }
-
-        .left p {
-            font-size: 36px;
-            color: #777;
-            margin-top: -10px;
         }
 
         .right {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end; /* Aligning content to the right */
-        }
-
-        .message {
-            font-size: 48px;
-            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
             color: #333;
-            text-align: center;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 24px;  /* Smaller font for secondary message */
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif; /* Applying Montserrat font here */
+            text-align: left;
         }
 
         ul {
-            padding-left: 0;
+            text-align: left;
+            list-style-type: disc;
+            padding-left: 20px;
         }
 
-        li {
-            font-size: 24px;
-            list-style-type: none;
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif; /* Ensuring Montserrat on the "You can" section */
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            font-size: 8pt;
+            padding: 10px 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <img src="logo.png" alt="thatoneamiho Logo" class="logo">
     <div class="container">
-        <!-- Left side: Website under construction -->
         <div class="left">
-            <h1>Website under construction</h1>
+            <h1>Website <br> under <br> construction</h1>
         </div>
-        <!-- Right side: You can see DamiOS on GitLab -->
         <div class="right">
+            <h2>You can:</h2>
             <ul>
-                <li style="font-family: 'Montserrat', sans-serif;">You can:</li>
-                <li><a href="https://gitlab.com/amiho/DamiOS" target="_blank">Visit DamiOS</a></li>
+                <li>Visit DamiOS on GitLab</li>
             </ul>
         </div>
     </div>
+    <footer>
+        Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc" style="color: #fff;">amiho@thatoneamiho.cc</a>
+    </footer>
 </body>
 </html>
