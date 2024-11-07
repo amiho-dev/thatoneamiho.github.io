@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -49,7 +49,6 @@
         }
 
         .left {
-            font-family: 'Montserrat', sans-serif;
             font-size: 32px;
             font-weight: normal;
             color: #333;
@@ -57,7 +56,6 @@
         }
 
         .right {
-            font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: normal;
             color: #333;
@@ -72,11 +70,16 @@
 
         footer {
             width: 100%;
-            background-color: #333;
-            color: #fff;
+            background-color: transparent;
+            color: #333;
             font-size: 8pt;
             padding: 10px 0;
             text-align: center;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -89,12 +92,12 @@
         <div class="right">
             <h2>You can:</h2>
             <ul>
-                <li>Visit DamiOS on GitLab</li>
+                <li><a href="https://gitlab.com/amiho/DamiOS" target="_blank">Visit DamiOS on GitLab</a></li>
             </ul>
         </div>
     </div>
     <footer>
-        Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc" style="color: #fff;">amiho@thatoneamiho.cc</a>
+        Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a>
     </footer>
 </body>
 </html>
