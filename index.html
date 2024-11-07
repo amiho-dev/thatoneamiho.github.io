@@ -7,30 +7,75 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .left, .right {
+            width: 48%;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
         h1 {
+            font-size: 72px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        p {
+            font-size: 36px;
+            color: #777;
+            margin-top: -10px;
+        }
+
+        .message {
             font-size: 48px;
+            font-weight: bold;
             color: #333;
         }
+
         a {
             color: #0066cc;
             text-decoration: none;
-            font-size: 18px;
-        }
-        p {
-            font-size: 24px;
-            color: #777;
+            font-size: 48px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <!-- Replacing the text with an image -->
-    <img src="logo.png" alt="thatoneamiho Development Logo" width="300">
-    <br>
-    <a href="https://gitlab.com/amiho/DamiOS" target="_blank">Visit DamiOS on GitLab</a>
-    <p>This website is under construction</p>
+    <div class="container">
+        <!-- Left side: Website under construction -->
+        <div class="left">
+            <h1>Website</h1>
+            <p>under</p>
+            <p>construction</p>
+        </div>
+        <!-- Right side: See DamiOS on GitLab -->
+        <div class="right">
+            <a href="https://gitlab.com/amiho/DamiOS" target="_blank">See DamiOS on GitLab</a>
+        </div>
+    </div>
 </body>
 </html>
