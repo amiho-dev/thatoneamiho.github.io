@@ -16,84 +16,89 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
             text-align: center;
             overflow: hidden;
-            flex-direction: column;
         }
 
         .container {
-            display: flex;
-            justify-content: space-between;
             width: 90%;
-            max-width: 1200px;
-            margin-bottom: 40px;
-        }
-
-        .left, .right {
-            width: 48%;
+            max-width: 800px;
+            padding: 20px;
         }
 
         .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 100px;
+            width: 80px;
             height: auto;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 72px;
+            font-size: 6vw;
             font-weight: bold;
             color: #333;
             margin: 0;
         }
 
-        .left {
-            font-size: 32px;
-            font-weight: normal;
+        .actions {
+            font-size: 4vw;
             color: #333;
-            text-align: left;
-        }
-
-        .right {
-            font-size: 18px;
-            font-weight: normal;
-            color: #333;
-            text-align: right; /* Rechtsbündig */
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         ul {
-            text-align: left;
             list-style-type: disc;
             padding-left: 20px;
-            margin-top: 0; /* Align with You can */
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+        }
+
+        .actions a {
+            color: #333;
+            text-decoration: none;
         }
 
         footer {
-            width: 100%;
             background-color: transparent;
             color: #333;
-            font-size: 8pt;
-            padding: 5px 0; /* Reduced padding */
+            font-size: 2vw;
             text-align: center;
             position: fixed;
-            bottom: 20px; /* Positioned slightly above the bottom */
+            bottom: 20px;
+            width: 100%;
         }
 
         footer a {
             color: #333;
             text-decoration: none;
         }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .logo {
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .actions {
+                font-size: 24px;
+            }
+
+            footer {
+                font-size: 8pt;
+            }
+        }
     </style>
 </head>
 <body>
     <img src="logo.png" alt="thatoneamiho Logo" class="logo">
     <div class="container">
-        <div class="left">
-            <h1>Website <br> under <br> construction</h1>
-        </div>
-        <div class="right">
+        <h1>Website under construction</h1>
+        <div class="actions">
             <h2>You can:</h2>
             <ul>
                 <li><a href="https://gitlab.com/amiho/DamiOS" target="_blank">Visit DamiOS on GitLab</a></li>
