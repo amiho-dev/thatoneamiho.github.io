@@ -4,109 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thatoneamiho Development</title>
-    <!-- Loading Montserrat font from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font face to load SF Pro -->
     <style>
+        @font-face {
+            font-family: 'SF Pro';
+            src: url('fonts/SF Pro.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* Base styles */
         body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'SF Pro', Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
             background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            text-align: center;
-            overflow: hidden;
         }
-
-        .container {
-            width: 90%;
-            max-width: 800px;
-            padding: 20px;
-        }
-
-        .logo {
-            width: 150px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
         h1 {
-            font-size: 6vw;
-            font-weight: bold;
+            font-size: 48px;
             color: #333;
-            margin: 0;
         }
-
-        .actions {
-            font-size: 4vw;
-            color: #333;
-            margin-top: 20px;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            text-align: left;
-            margin: 0 auto;
-            display: inline-block;
-        }
-
-        .actions a {
-            color: #333;
+        a {
+            color: #0066cc;
             text-decoration: none;
+            font-size: 18px;
         }
-
+        p {
+            font-size: 24px;
+            color: #777;
+        }
+        /* Right-aligned section */
+        .right-align {
+            text-align: right;
+        }
+        /* Footer styling */
         footer {
-            background-color: transparent;
-            color: #333;
-            font-size: 2vw;
-            text-align: center;
+            font-size: 8pt;
             position: fixed;
-            bottom: 20px;
             width: 100%;
-        }
-
-        footer a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        /* Responsive adjustments */
-        @media (min-width: 768px) {
-            .logo {
-                width: 100px;
-            }
-
-            h1 {
-                font-size: 48px;
-            }
-
-            .actions {
-                font-size: 24px;
-            }
-
-            footer {
-                font-size: 8pt;
-            }
+            bottom: 10px;
+            text-align: center;
+            background: transparent;
         }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="thatoneamiho Logo" class="logo">
-    <div class="container">
-        <h1>Website under construction</h1>
-        <div class="actions">
-            <h2>You can:</h2>
-            <ul>
+    <!-- Main Content -->
+    <div style="display: flex; align-items: flex-start;">
+        <div style="flex: 1; text-align: left;">
+            <h1>Website under construction</h1>
+        </div>
+        <div class="right-align" style="flex: 1;">
+            <p>You can:</p>
+            <ul style="list-style-type: disc; text-align: left;">
                 <li><a href="https://gitlab.com/amiho/DamiOS" target="_blank">Visit DamiOS on GitLab</a></li>
             </ul>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer>
-        Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a>
+        made by amiho in 2024 | amiho@thatoneamiho.cc
     </footer>
 </body>
 </html>
