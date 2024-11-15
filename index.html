@@ -22,9 +22,10 @@
         header img {
             width: 50px; /* Adjust logo size */
         }
-        .projects-title {
-            font-size: 24px;
-            margin-left: 20px;
+        .home-btn {
+            font-size: 18px;
+            color: #0066cc;
+            text-decoration: none;
         }
         .container {
             display: flex;
@@ -63,34 +64,9 @@
             color: white;
             font-size: 12px;
         }
-
-        /* Mobile Optimization */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: center;
-            }
-            .projects-title {
-                font-size: 20px;
-                text-align: center;
-                margin-top: 10px;
-            }
-            .container {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px;
-            }
-            .container img {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-            .container .text-content {
-                max-width: 100%;
-                text-align: center;
-            }
-            .container .text-content h2 {
-                font-size: 24px;
-            }
+        footer a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -98,7 +74,7 @@
 
 <header>
     <img src="Pictures/logo.png" alt="Logo">
-    <div class="projects-title">Projects by amiho</div>
+    <a href="index.html" class="home-btn">Home</a>
 </header>
 
 <div class="container">
@@ -111,7 +87,7 @@
 </div>
 
 <footer>
-    <p>Website under construction - Made by amiho in 2024 | amiho@thatoneamiho.cc</p>
+    <p>Website under construction - Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
 </footer>
 
 </body>
