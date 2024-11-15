@@ -3,52 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thatoneamiho Development</title>
+    <title>Projects by amiho</title>
     <style>
-        @font-face {
-            font-family: 'SF Pro Rounded';
-            src: url('https://github.com/amiho-dev/thatoneamiho.github.io/raw/main/fonts/SF-Pro-Rounded-Regular.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
         body {
-            font-family: 'SF Pro Rounded', sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
+            font-family: 'SF Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
         }
-        h1 {
-            font-size: 48px;
-            color: #333;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        a {
-            color: #0066cc;
+        header img {
+            height: 50px;
+        }
+        header a {
             text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
             font-size: 18px;
         }
-        p {
-            font-size: 24px;
-            color: #777;
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        .projects-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .projects-section img {
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .projects-section div {
+            text-align: left;
+            max-width: 400px;
+        }
+        .projects-section h2 {
+            margin: 0;
+            color: #333333;
+        }
+        .projects-section p {
+            color: #666666;
+        }
+        .projects-section a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .projects-section a:hover {
+            background-color: #0056b3;
         }
         footer {
-            font-size: 8pt;
             text-align: center;
-            color: #aaa;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+            color: #777777;
         }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="thatoneamiho Development Logo" width="300">
-    <h1>Website Under Construction</h1>
-    <div>
-        <p>You can:</p>
-        <ul>
-            <li><a href="https://gitlab.com/amiho/DamiOS" target="_blank">Visit DamiOS on GitLab</a></li>
-        </ul>
-    </div>
+    <header>
+        <img src="Pictures/logo.png" alt="Logo">
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <div class="projects-section">
+            <img src="Pictures/damiOS-photo.png" alt="DamiOS Screenshot">
+            <div>
+                <h2>DamiOS</h2>
+                <p>DamiOS is a command-line operating system simulation, perfect for retro enthusiasts and developers looking to experience simplified OS interactions. Explore its intuitive interface and robust functionality!</p>
+                <a href="https://gitlab.com/amiho/DamiOS" target="_blank">Get DamiOS - GitLab</a>
+            </div>
+        </div>
+    </main>
     <footer>
-        <p>Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
+        Made by amiho in 2024 | amiho@thatoneamiho.cc<br>
+        Website under construction.
     </footer>
 </body>
 </html>
