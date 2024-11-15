@@ -4,93 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thatoneamiho Development</title>
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Funnel Display', sans-serif;
+            text-align: left;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            text-align: left;
         }
         header {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 20px;
-            background-color: #333;
-            color: white;
         }
         header img {
-            height: 50px;
-        }
-        header a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
+            width: 50px; /* Adjust logo size */
         }
         .projects-title {
-            font-size: 36px;
+            font-size: 24px;
             margin-left: 20px;
         }
-        .project-container {
+        .container {
             display: flex;
-            margin: 40px;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            flex-wrap: wrap;
         }
-        .project-container img {
-            width: 50%;
+        .container img {
+            width: 400px; /* Adjust image size */
             margin-right: 20px;
         }
-        .project-info {
-            width: 50%;
+        .container .text-content {
+            max-width: 500px;
         }
-        .project-info h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
+        .container .text-content h2 {
+            font-size: 28px;
         }
-        .project-info p {
+        .container .text-content p {
             font-size: 18px;
             color: #555;
         }
-        .project-info a {
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 18px;
+        .btn {
             display: inline-block;
-            margin-top: 20px;
-            border: 2px solid #0066cc;
+            background-color: #0066cc;
+            color: white;
             padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
+            margin-top: 20px;
         }
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
             padding: 10px;
-            font-size: 14px;
+            background-color: #333;
+            color: white;
+            font-size: 12px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .projects-title {
+                font-size: 20px;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+            .container img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .container .text-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            .container .text-content h2 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logo">
-        <a href="index.html">Home</a>
-    </header>
 
-    <div class="projects-title">
-        <h1>Projects by amiho</h1>
+<header>
+    <img src="Pictures/logo.png" alt="Logo">
+    <div class="projects-title">Projects by amiho</div>
+</header>
+
+<div class="container">
+    <img src="Pictures/damiOS-photo.png" alt="DamiOS Screenshot">
+    <div class="text-content">
+        <h2>DamiOS</h2>
+        <p>A lightweight, customizable operating system inspired by In The Groove and built for command-line enthusiasts.</p>
+        <a href="https://gitlab.com/amiho/DamiOS" class="btn" target="_blank">Get DamiOS - GitLab</a>
     </div>
+</div>
 
-    <div class="project-container">
-        <img src="https://github.com/amiho-dev/thatoneamiho.github.io/blob/main/Pictures/damiOS-photo.PNG?raw=true" alt="damiOS Screenshot">
-        <div class="project-info">
-            <h2>DamiOS</h2>
-            <p>DamiOS is a custom operating system designed to simulate a modern command-line interface. It's optimized for both performance and ease of use, featuring various system tools and utilities.</p>
-            <a href="https://gitlab.com/amiho/DamiOS" target="_blank">Get DamiOS - GitLab</a>
-        </div>
-    </div>
+<footer>
+    <p>Website under construction - Made by amiho in 2024 | amiho@thatoneamiho.cc</p>
+</footer>
 
-    <footer>
-        <p>Website under construction | Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
-    </footer>
 </body>
 </html>
