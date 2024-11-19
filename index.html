@@ -4,111 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thatoneamiho Development</title>
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Funnel Display', sans-serif;
-            background-color: #181818;
-            color: #e0e0e0;
+            background-color: #121212;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
 
-        header {
-            background-color: #121212;
-            padding: 20px;
+        header, footer {
+            background-color: #1e1e1e;
+            padding: 10px 20px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
         }
 
         header img {
-            width: 200px;
-            height: auto;
+            height: 60px;
         }
 
-        header a {
-            color: #e0e0e0;
+        header nav a {
+            color: #ffffff;
             text-decoration: none;
+            margin-left: 20px;
             font-size: 18px;
         }
 
-        .main {
-            padding: 50px;
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .project {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            margin-bottom: 40px;
         }
 
-        .main img {
-            width: 50%;
-            height: auto;
+        .project img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin-right: 20px;
         }
 
-        .text {
-            max-width: 40%;
+        .project-text {
+            flex: 1;
         }
 
-        .text h2 {
-            font-size: 32px;
-            color: #fff;
+        .project-title {
+            font-size: 28px;
+            margin-bottom: 10px;
         }
 
-        .text p {
+        .project-description {
             font-size: 18px;
-            color: #e0e0e0;
+            margin-bottom: 20px;
         }
 
-        .footer {
-            background-color: #121212;
-            padding: 10px;
-            text-align: center;
-            color: #e0e0e0;
-            font-size: 14px;
-        }
-
-        .footer a {
-            color: #e0e0e0;
+        .project a {
+            background-color: #007bff;
+            color: #ffffff;
             text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
-        @media (max-width: 768px) {
-            .main {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .main img {
-                width: 80%;
-                margin-bottom: 20px;
-            }
-
-            .text {
-                max-width: 80%;
-            }
+        footer {
+            font-size: 12px;
+            text-align: center;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <img src="Pictures/logo.png" alt="Logo">
-    <a href="index.html">Home</a>
-</header>
-
-<div class="main">
-    <img src="Pictures/damiOS-photo.PNG" alt="DamiOS Screenshot">
-    <div class="text">
-        <h2>DamiOS</h2>
-        <p>This is DamiOS, a unique CMD-based operating system simulation designed for those who love exploring tech and pushing the boundaries of command-line functionality. Developed by amiho, DamiOS is all about experimenting, learning, and making command line cool again!</p>
-        <a href="https://gitlab.com/amiho/DamiOS" target="_blank" style="color: #0066cc; text-decoration: none; font-size: 18px;">Get DamiOS - GitLab</a>
-    </div>
-</div>
-
-<div class="footer">
-    <p>Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
-    <p>Website under construction</p>
-</div>
-
+    <header>
+        <img src="Pictures/logo.png" alt="thatoneamiho Development Logo">
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Projects by amiho</h1>
+        <section>
+            <div class="project">
+                <img src="Pictures/damiOS-photo.PNG" alt="DamiOS Screenshot">
+                <div class="project-text">
+                    <h2 class="project-title">DamiOS</h2>
+                    <p class="project-description">This is DamiOS, a unique CMD-based operating system simulation designed for those who love exploring tech and pushing the boundaries of command-line functionality. Developed by amiho, DamiOS is all about experimenting, learning, and making command line cool again!</p>
+                    <a href="https://gitlab.com/amiho/DamiOS" target="_blank">Get DamiOS - GitLab</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="project">
+                <img src="Pictures/ITG.png" alt="In The Groove 3 - HD Screenshot">
+                <div class="project-text">
+                    <h2 class="project-title">In The Groove 3 - HD Version</h2>
+                    <p class="project-description">A visually stunning upgrade to the classic dance rhythm game, reimagined by amiho. Dive into a revamped world of beats and grooves with enhanced high-definition visuals, refined gameplay, and the same addictive fun!</p>
+                    <a href="https://gitlab.com/amiho/ITG3HD" target="_blank">Get In The Groove 3 - GitLab</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc" style="color: #ffffff;">amiho@thatoneamiho.cc</a><br>
+        Website under construction
+    </footer>
 </body>
 </html>
