@@ -4,121 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thatoneamiho Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Funnel Display', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
             margin: 0;
-            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
         }
 
-        header, footer {
-            background-color: #1e1e1e;
-            padding: 10px 20px;
+        header {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #1e1e1e;
         }
 
         header img {
-            height: 60px;
+            width: 150px;
         }
 
-        header nav a {
+        header a {
             color: #ffffff;
             text-decoration: none;
-            margin-left: 20px;
             font-size: 18px;
+            padding: 10px 20px;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        main {
-            padding: 40px 20px;
+        header a:hover {
+            background-color: #ffffff;
+            color: #1e1e1e;
         }
 
-        section {
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             margin-bottom: 50px;
         }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .project {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-
-        .project img {
+        .section img {
             max-width: 300px;
+            margin-right: 30px;
             border-radius: 10px;
-            margin-right: 20px;
         }
 
-        .project-text {
-            flex: 1;
-        }
-
-        .project-title {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        .project-description {
-            font-size: 18px;
+        .section-content h2 {
+            font-size: 32px;
             margin-bottom: 20px;
         }
 
-        .project a {
-            background-color: #007bff;
+        .section-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .section-content a {
+            display: inline-block;
             color: #ffffff;
-            text-decoration: none;
+            background-color: #1e90ff;
             padding: 10px 20px;
             border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .section-content a:hover {
+            background-color: #0066cc;
         }
 
         footer {
-            font-size: 12px;
             text-align: center;
-            padding-top: 20px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #888888;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="Pictures/logo.png" alt="thatoneamiho Development Logo">
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+        <img src="Pictures/logo.png" alt="thatoneamiho Logo">
+        <a href="index.html">Home</a>
     </header>
-    <main>
+    <div class="container">
         <h1>Projects by amiho</h1>
-        <section>
-            <div class="project">
-                <img src="Pictures/damiOS-photo.PNG" alt="DamiOS Screenshot">
-                <div class="project-text">
-                    <h2 class="project-title">DamiOS</h2>
-                    <p class="project-description">This is DamiOS, a unique CMD-based operating system simulation designed for those who love exploring tech and pushing the boundaries of command-line functionality. Developed by amiho, DamiOS is all about experimenting, learning, and making command line cool again!</p>
-                    <a href="https://gitlab.com/amiho/DamiOS" target="_blank">Get DamiOS - GitLab</a>
-                </div>
+        <div class="section">
+            <img src="Pictures/damiOS-photo.PNG" alt="DamiOS Screenshot">
+            <div class="section-content">
+                <h2>DamiOS</h2>
+                <p>This is DamiOS, a unique CMD-based operating system simulation designed for those who love exploring tech and pushing the boundaries of command-line functionality. Developed by amiho, DamiOS is all about experimenting, learning, and making command line cool again!</p>
+                <a href="https://gitlab.com/amiho/DamiOS" target="_blank">Get DamiOS - GitLab</a>
             </div>
-        </section>
-        <section>
-            <div class="project">
-                <img src="Pictures/ITG.png" alt="In The Groove 3 - HD Screenshot">
-                <div class="project-text">
-                    <h2 class="project-title">In The Groove 3 - HD Version</h2>
-                    <p class="project-description">A visually stunning upgrade to the classic dance rhythm game, reimagined by amiho. Dive into a revamped world of beats and grooves with enhanced high-definition visuals, refined gameplay, and the same addictive fun!</p>
-                    <a href="https://gitlab.com/amiho/ITG3HD" target="_blank">Get In The Groove 3 - GitLab</a>
-                </div>
+        </div>
+        <div class="section">
+            <img src="Pictures/itg.png" alt="In The Groove 3 HD Screenshot">
+            <div class="section-content">
+                <h2>In The Groove 3 - HD Version</h2>
+                <p>Experience In The Groove 3 in high definition like never before! Remastered by amiho, this project enhances the visual experience while staying true to the original charm.</p>
+                <a href="https://gitlab.com/amiho/InTheGroove3HD" target="_blank">Get In The Groove 3 - GitLab</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
     <footer>
-        Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc" style="color: #ffffff;">amiho@thatoneamiho.cc</a><br>
-        Website under construction
+        <p>Website under construction. Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
     </footer>
 </body>
 </html>
