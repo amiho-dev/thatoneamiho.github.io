@@ -25,6 +25,11 @@
             width: 150px;
         }
 
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
         header a {
             color: #ffffff;
             text-decoration: none;
@@ -46,32 +51,44 @@
             padding: 0 20px;
         }
 
-        .section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-bottom: 50px;
+        h1 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 40px;
         }
 
-        .section img {
-            max-width: 300px;
-            margin-right: 30px;
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .project {
+            background-color: #1e1e1e;
             border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
         }
 
-        .section-content h2 {
-            font-size: 32px;
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
 
-        .section-content p {
-            font-size: 18px;
-            line-height: 1.6;
+        .project h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            font-size: 16px;
+            line-height: 1.5;
             margin-bottom: 20px;
         }
 
-        .section-content a {
-            display: inline-block;
+        .project a {
             color: #ffffff;
             background-color: #1e90ff;
             padding: 10px 20px;
@@ -80,7 +97,7 @@
             transition: background-color 0.3s;
         }
 
-        .section-content a:hover {
+        .project a:hover {
             background-color: #0066cc;
         }
 
@@ -105,24 +122,25 @@
 <body>
     <header>
         <img src="Pictures/logo.png" alt="thatoneamiho Logo">
-        <a href="index.html">Home</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="DamiOS.html">DamiOS</a>
+        </nav>
     </header>
     <div class="container">
-        <h1>Projects by amiho</h1>
-        <div class="section">
-            <img src="Pictures/damiOS-photo.PNG" alt="DamiOS Screenshot">
-            <div class="section-content">
+        <h1>Welcome to thatoneamiho Development</h1>
+        <div class="projects">
+            <div class="project">
+                <img src="Pictures/damiOS-photo.PNG" alt="DamiOS Screenshot">
                 <h2>DamiOS</h2>
-                <p>This is DamiOS, a unique CMD-based operating system simulation designed for those who love exploring tech and pushing the boundaries of command-line functionality. Developed by amiho, DamiOS is all about experimenting, learning, and making command line cool again!</p>
-                <a href="https://thatoneamiho.cc/DamiOS" target="_blank">Learn more about DamiOS</a>
+                <p>A CMD-based operating system simulation for tech enthusiasts who love experimenting with the command line.</p>
+                <a href="DamiOS.html">Learn More</a>
             </div>
-        </div>
-        <div class="section">
-            <img src="Pictures/ITG-HD.png" alt="In The Groove 3 HD Screenshot">
-            <div class="section-content">
+            <div class="project">
+                <img src="Pictures/ITG-HD.png" alt="In The Groove 3 HD Screenshot">
                 <h2>In The Groove 3 - HD Version</h2>
-                <p>Experience In The Groove 3 in high definition like never before! Remastered by amiho, this project enhances the visual experience while staying true to the original charm.</p>
-                <a href="https://gitlab.com/amiho/InTheGroove3HD" target="_blank">Get In The Groove 3 - GitLab</a>
+                <p>Experience In The Groove 3 remastered in high definition while staying true to the original charm.</p>
+                <a href="https://gitlab.com/amiho/InTheGroove3HD" target="_blank">View Project</a>
             </div>
         </div>
     </div>
