@@ -96,13 +96,20 @@
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             transition: background-color 0.3s, transform 0.3s;
         }
 
         .download-button:hover {
             background-color: #0066cc;
             transform: scale(1.05);
+        }
+
+        .download-button img {
+            width: 20px;
+            height: 20px;
         }
 
         .icon {
@@ -144,10 +151,13 @@
         </div>
 
         <div class="download-section">
-            <img src="Pictures/ITG-Arrow.ico" alt="ITG Arrow Icon" class="icon">
+            <img src="path/to/ITG-Arrow.ico" alt="ITG Arrow Icon" class="icon">
             <div>
                 <p><strong>Beta 1 - Download the 1.3 GB ZIP file to install In The Groove 3 - HD Version:</strong></p>
-                <a href="Filebase/ITG3HD_Beta1.zip" class="download-button" download>Download Now</a>
+                <a href="Filebase/ITG3HD_Beta1.zip" class="download-button" download>
+                    <img src="Pictures/logo.png" alt="Logo">
+                    Download Now
+                </a>
             </div>
         </div>
     </div>
