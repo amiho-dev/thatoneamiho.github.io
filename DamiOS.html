@@ -9,7 +9,8 @@
         body {
             font-family: 'Funnel Display', sans-serif;
             margin: 0;
-            background-color: #121212;
+            background: linear-gradient(to bottom, #121212, #1e1e1e), url('../Pictures/snowflakes.png');
+            background-size: cover;
             color: #e0e0e0;
         }
 
@@ -53,17 +54,18 @@
         }
 
         .section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 50px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
             text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
         }
 
         .section img {
-            max-width: 300px;
-            margin-bottom: 20px;
+            max-width: 100%;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
 
         .section h2 {
@@ -90,7 +92,7 @@
 
         .section a {
             color: #ffffff;
-            background-color: #1e90ff;
+            background-color: #ff3b3f;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
@@ -98,24 +100,32 @@
         }
 
         .section a:hover {
-            background-color: #0066cc;
+            background-color: #e62e2e;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e1e1e;
-            color: #888888;
+            color: #ff3b3f;
             font-size: 14px;
         }
 
         footer a {
-            color: #1e90ff;
+            color: #ff3b3f;
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        footer::before {
+            content: "🎅 ";
+        }
+
+        footer::after {
+            content: " 🎄";
         }
     </style>
 </head>
@@ -138,11 +148,11 @@
             <p>1. Open PowerShell as an Administrator.</p>
             <p>2. Copy and paste the command above, then hit <strong>Enter</strong>.</p>
             <p>3. Let DamiOS handle the rest!</p>
-            <a href="https://gitlab.com/amiho/DamiOS" target="_blank">View DamiOS on GitLab</a>
+            <a href="https://gitlab.com/amiho/DamiOS">View DamiOS on GitLab</a>
         </div>
     </div>
     <footer>
-        <p>Website under construction. Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
+        <p>Made with ❤️ by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
     </footer>
 </body>
 </html>
