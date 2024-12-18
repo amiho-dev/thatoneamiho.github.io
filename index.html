@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thatoneamiho Development</title>
+    <title>thatoneamiho Development - Merry Christmas!</title>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Funnel Display', sans-serif;
             margin: 0;
-            background-color: #121212;
+            background: linear-gradient(to bottom, #121212, #1e1e1e), url('Pictures/snowflakes.png');
+            background-size: cover;
             color: #e0e0e0;
         }
 
@@ -45,9 +46,20 @@
             color: #1e1e1e;
         }
 
+        .christmas-banner {
+            text-align: center;
+            background-color: #ff3b3f;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
         .container {
             max-width: 1200px;
-            margin: 50px auto;
+            margin: 30px auto;
             padding: 0 20px;
         }
 
@@ -57,6 +69,10 @@
             margin-bottom: 40px;
         }
 
+        h1::after {
+            content: " 🎄";
+        }
+
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -64,11 +80,12 @@
         }
 
         .project {
-            background-color: #1e1e1e;
+            background-color: #2a2a2a;
             border-radius: 10px;
             overflow: hidden;
             text-align: center;
             padding: 20px;
+            position: relative;
         }
 
         .project img {
@@ -82,6 +99,14 @@
             margin-bottom: 15px;
         }
 
+        .project h2::before {
+            content: "✨ ";
+        }
+
+        .project h2::after {
+            content: " ✨";
+        }
+
         .project p {
             font-size: 16px;
             line-height: 1.5;
@@ -90,7 +115,7 @@
 
         .project a {
             color: #ffffff;
-            background-color: #1e90ff;
+            background-color: #ff3b3f;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
@@ -98,24 +123,32 @@
         }
 
         .project a:hover {
-            background-color: #0066cc;
+            background-color: #e62e2e;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e1e1e;
-            color: #888888;
+            color: #ff3b3f;
             font-size: 14px;
         }
 
         footer a {
-            color: #1e90ff;
+            color: #ff3b3f;
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        footer::before {
+            content: "🎅 ";
+        }
+
+        footer::after {
+            content: " 🎄";
         }
     </style>
 </head>
@@ -125,9 +158,12 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="DamiOS.html">DamiOS</a>
-			<a href="ITG3.html">ITG3 HD</a>
+            <a href="ITG3.html">ITG3 HD</a>
         </nav>
     </header>
+    <div class="christmas-banner">
+        🎁 Merry Christmas and Happy Holidays from thatoneamiho Development! 🎁
+    </div>
     <div class="container">
         <h1>Welcome to thatoneamiho Development</h1>
         <div class="projects">
@@ -146,7 +182,7 @@
         </div>
     </div>
     <footer>
-        <p>Website under construction. Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
+        <p>Made with ❤️ by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
     </footer>
 </body>
 </html>
