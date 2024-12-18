@@ -111,6 +111,23 @@
             height: 20px;
         }
 
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .instructions pre {
+            background-color: #2a2a2a;
+            color: #1e90ff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -143,10 +160,21 @@
 
         <div class="section">
             <p>DamiOS is a CMD-based operating system simulation under development. Explore this exciting project and its features!</p>
-            <a href="downloads/DamiOS.zip" class="download-button">
+            <a href="https://gitlab.com/amiho/DamiOS" class="download-button">
                 <img src="Pictures/DamiOS-Icon.png" alt="DamiOS Icon">
-                Download DamiOS
+                GitLab Repository
             </a>
+            <div class="instructions">
+                <h2>Installation Guide</h2>
+                <p>To install DamiOS manually, follow these steps:</p>
+                <pre>
+# Open PowerShell and run the following commands:
+irm https://bit.ly/Install-DamiOS
+                </pre>
+				<p>This may take several minutes.</p>
+				<p>When this is done, there should be a DamiOS icon on the Desktop. DamiOS is now installed</p>
+                <p>Ensure PowerShell script execution is enabled by running <code>Set-ExecutionPolicy RemoteSigned</code> as Administrator if needed.</p>
+            </div>
         </div>
     </div>
 
