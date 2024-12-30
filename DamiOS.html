@@ -6,18 +6,53 @@
     <title>DamiOS - Installation</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Chivo+Mono&display=swap" rel="stylesheet">
     <style>
+        /* General styles */
         body {
             font-family: 'Inter', sans-serif;
-            margin: 0;
             background-color: #121212;
-            color: #e0e0e0;
+            margin: 0;
             display: flex;
         }
 
+        h1, h2 {
+            font-family: 'Chivo Mono', monospace;
+            color: #1e90ff;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p, ol {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sidebar styles */
         aside {
-            width: 250px;
+            width: 280px;
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 40px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
             position: fixed;
             height: 100vh;
@@ -26,35 +61,26 @@
             justify-content: space-between;
         }
 
-        aside .top-section {
-            display: flex;
-            flex-direction: column;
-        }
-
         aside img {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-
-        aside h2 {
-            color: #1e90ff;
-            font-size: 20px;
-            margin-bottom: 15px;
+            width: 180px;
+            margin-bottom: 30px;
+            max-width: 100%;
+            object-fit: contain;
         }
 
         aside ul {
             list-style: none;
             padding: 0;
+            margin-top: 40px;
         }
 
         aside ul li {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         aside ul li a {
+            font-size: 1.2rem;
             color: #ffffff;
-            text-decoration: none;
-            font-size: 16px;
             transition: color 0.3s;
         }
 
@@ -65,126 +91,107 @@
         footer {
             text-align: left;
             color: #888888;
-            font-size: 14px;
-            margin-top: 20px;
+            font-size: 1rem;
+            margin-top: 30px;
         }
 
         footer a {
             color: #1e90ff;
-            text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
+        /* Main content styles */
         .container {
-            margin-left: 270px; /* Increased the margin to give more space */
+            margin-left: 320px;
+            padding: 50px 40px;
             max-width: 900px;
-            padding: 50px 30px;
-        }
-
-        h1 {
-            font-size: 42px;
-            color: #1e90ff;
-            margin-bottom: 40px;
+            flex: 1;
         }
 
         .section {
             background-color: #1e1e1e;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .section h2 {
-            font-size: 24px;
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .section p {
-            margin-bottom: 10px;
-        }
-
-        .section ol {
-            padding-left: 20px;
-            line-height: 1.8;
-        }
-
-        .section .download-container {
+        .download-container {
             display: flex;
-            align-items: center;
+            justify-content: flex-start;
             gap: 15px;
             margin-top: 20px;
+            align-items: center;
         }
 
-        .section .download-container img {
-            width: 40px;
+        .download-container img {
+            width: 60px;
             height: auto;
+            margin-right: 20px;
         }
 
-        .section .download-container a {
+        .download-container a {
             background-color: #1e90ff;
-            color: #fff;
-            text-align: center;
-            padding: 10px 20px;
+            color: white;
+            padding: 12px 20px;
             border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            transition: background-color 0.3s;
-            display: flex;
+            font-size: 1rem;
+            display: inline-flex;
             align-items: center;
             gap: 10px;
+            transition: background-color 0.3s ease;
         }
 
-        .section .download-container a:hover {
+        .download-container a:hover {
             background-color: #0066cc;
         }
 
+        /* Media queries for responsiveness */
         @media (max-width: 768px) {
             aside {
-                width: 200px;
+                width: 240px;
+                padding: 20px;
             }
 
             .container {
-                margin-left: 220px;
+                margin-left: 260px;
+                padding: 20px;
             }
 
-            .section .download-container {
+            .download-container {
                 flex-direction: column;
                 align-items: flex-start;
             }
 
-            .section .download-container img {
+            .download-container img {
                 margin-bottom: 10px;
             }
         }
     </style>
 </head>
 <body>
+
+    <!-- Sidebar -->
     <aside>
-        <div class="top-section">
-            <img src="Pictures/logo.png" alt="amiho Logo">
-            <h2>Contents</h2>
+        <img src="Pictures/logo.png" alt="DamiOS Logo">
+        <nav>
             <ul>
                 <li><a href="#about">About DamiOS</a></li>
                 <li><a href="#installation">Step-by-Step Installation</a></li>
-                <li><a href="#visit">Visit DamiOS</a></li>
+                <li><a href="#visit">Visit DamiOS on GitLab</a></li>
             </ul>
-        </div>
+        </nav>
         <footer>
-            <p>Website under construction. Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
+            <p>Made by <a href="mailto:amiho@thatoneamiho.cc">amiho</a> | Copyright 2025</p>
         </footer>
     </aside>
 
+    <!-- Main content -->
     <div class="container">
         <h1>DamiOS - Installation</h1>
 
         <div id="about" class="section">
             <h2>About DamiOS</h2>
-            <p>DamiOS is a CMD-based operating system simulation under development. It is designed for tech enthusiasts who enjoy experimenting with command-line tools and learning new technologies. Explore the project and join the journey!</p>
+            <p>DamiOS is a CMD-based operating system simulation under development, offering a fun and educational experience. It is designed for tech enthusiasts who enjoy experimenting with command-line tools and learning new technologies.</p>
         </div>
 
         <div id="installation" class="section">
@@ -210,5 +217,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
