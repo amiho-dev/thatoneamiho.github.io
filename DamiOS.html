@@ -3,116 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DamiOS - Installation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Chivo+Mono&display=swap" rel="stylesheet">
+    <title>DamiOS Installation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <style>
-        /* General styles */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #121212;
+        * {
             margin: 0;
-            display: flex;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        h1, h2 {
-            font-family: 'Chivo Mono', monospace;
-            color: #1e90ff;
+        body {
+            font-family: 'Fira Code', monospace;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            text-align: center;
         }
 
         h1 {
+            font-family: 'Fira Code', monospace;
             font-size: 3rem;
-            margin-bottom: 20px;
+            color: #1e90ff;
+            margin-bottom: 30px;
         }
 
-        h2 {
+        .step {
+            background-color: #333333;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .step h2 {
             font-size: 2rem;
+            color: #ffffff;
             margin-bottom: 15px;
         }
 
-        p, ol {
-            color: #e0e0e0;
+        .step p {
             font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #dddddd;
         }
 
-        ol {
+        .step ol {
             padding-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Sidebar styles */
-        aside {
-            width: 280px;
-            background-color: #1e1e1e;
-            padding: 40px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-            position: fixed;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        aside img {
-            width: 180px;
-            margin-bottom: 30px;
-            max-width: 100%;
-            object-fit: contain;
-        }
-
-        aside ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 40px;
-        }
-
-        aside ul li {
-            margin-bottom: 20px;
-        }
-
-        aside ul li a {
-            font-size: 1.2rem;
-            color: #ffffff;
-            transition: color 0.3s;
-        }
-
-        aside ul li a:hover {
-            color: #1e90ff;
-        }
-
-        footer {
-            text-align: left;
-            color: #888888;
-            font-size: 1rem;
-            margin-top: 30px;
-        }
-
-        footer a {
-            color: #1e90ff;
-        }
-
-        /* Main content styles */
-        .container {
-            margin-left: 320px;
-            padding: 50px 40px;
-            max-width: 900px;
-            flex: 1;
-        }
-
-        .section {
-            background-color: #1e1e1e;
-            padding: 30px;
-            margin-bottom: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         .download-container {
@@ -145,15 +97,20 @@
             background-color: #0066cc;
         }
 
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            aside {
-                width: 240px;
-                padding: 20px;
-            }
+        footer {
+            text-align: center;
+            color: #888888;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
 
+        footer a {
+            color: #1e90ff;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
             .container {
-                margin-left: 260px;
                 padding: 20px;
             }
 
@@ -170,52 +127,35 @@
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <aside>
-        <img src="Pictures/logo.png" alt="DamiOS Logo">
-        <nav>
-            <ul>
-                <li><a href="#about">About DamiOS</a></li>
-                <li><a href="#installation">Step-by-Step Installation</a></li>
-                <li><a href="#visit">Visit DamiOS on GitLab</a></li>
-            </ul>
-        </nav>
-        <footer>
-            <p>Made by <a href="mailto:amiho@thatoneamiho.cc">amiho</a> | Copyright 2025</p>
-        </footer>
-    </aside>
-
-    <!-- Main content -->
     <div class="container">
-        <h1>DamiOS - Installation</h1>
+        <h1>DamiOS Installation</h1>
 
-        <div id="about" class="section">
-            <h2>About DamiOS</h2>
-            <p>DamiOS is a CMD-based operating system simulation under development, offering a fun and educational experience. It is designed for tech enthusiasts who enjoy experimenting with command-line tools and learning new technologies.</p>
+        <div class="step">
+            <h2>Step 1: Open PowerShell</h2>
+            <p>Open PowerShell as Administrator and execute the following command:</p>
+            <pre>irm https://bit.ly/Install-DamiOS | iex</pre>
         </div>
 
-        <div id="installation" class="section">
-            <h2>Step-by-Step Installation</h2>
-            <ol>
-                <li>Open PowerShell as Administrator.</li>
-                <li>Run the following command:
-                    <pre>irm https://bit.ly/Install-DamiOS | iex</pre>
-                </li>
-                <li>Wait for the installation to complete.</li>
-                <li>Ensure PowerShell script execution is enabled by running:
-                    <pre>Set-ExecutionPolicy RemoteSigned</pre>
-                </li>
-                <li>Once complete, double-click the DamiOS icon on your desktop to start exploring!</li>
-            </ol>
+        <div class="step">
+            <h2>Step 2: Enable Execution</h2>
+            <p>Ensure PowerShell script execution is enabled by running:</p>
+            <pre>Set-ExecutionPolicy RemoteSigned</pre>
         </div>
 
-        <div id="visit" class="section">
-            <h2>Visit DamiOS</h2>
-            <div class="download-container">
-                <img src="Pictures/gitlablogo.png" alt="GitLab Logo">
-                <a href="https://gitlab.com/amiho/DamiOS" target="_blank">View DamiOS on GitLab</a>
-            </div>
+        <div class="step">
+            <h2>Step 3: Launch DamiOS</h2>
+            <p>Once installation is complete, double-click the DamiOS icon on your desktop to start exploring!</p>
         </div>
+
+        <div class="download-container">
+            <a href="https://gitlab.com/amiho/DamiOS" target="_blank">
+                View DamiOS on GitLab
+            </a>
+        </div>
+
+        <footer>
+            <p>Website under construction. Made by amiho in 2024 | <a href="mailto:amiho@thatoneamiho.cc">amiho@thatoneamiho.cc</a></p>
+        </footer>
     </div>
 
 </body>
